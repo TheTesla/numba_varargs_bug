@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "minimal demo numba varargs bug"
+version = "0.1.0"
+description = "Some combinations of varargs and keyword args behave wrong."
+authors = ["Stefan Helmert <stefan@entroserv.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numba = "==0.60.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
