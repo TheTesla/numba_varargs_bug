@@ -1,4 +1,15 @@
-# actual vs. expected output
+# numba bug variadic parameter functions with additional parameters
+
+## reproduce
+
+```bash
+python3 bug.py > bug.txt
+python3 expected.py > expected.txt
+diff bug.txt expected.txt
+diff -u bug.txt expected.txt > diff.txt
+```
+
+## actual vs. expected output
 
 ```diff
 --- bug.txt	2024-11-10 15:50:54.943184817 +0100
